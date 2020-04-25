@@ -1,0 +1,74 @@
+Changelog
+
+3.0.0.8 
+	Merged all four projects into single project 
+	Added back old parts, FlightSchool, Theater
+	Added back resources: education, flightExperience, inspiration
+	Fixed issue with nullrefs because of null vessels
+	Fixed issue with reloading from JSON, vessel wouldn't be properly linked
+	Numerous other small fixes
+	Added KerbalChangeLog.cfg
+	Eliminated unnecessary 2nd button, incorporated into single window with tabs
+
+3.0.0.7
+	Fixed internal spaces for flight school and movie theater
+	removed resources from the flight school (Not needed since they are added by LS patches)
+	Added message to hab module showing current breeding status
+	Improved recruitement, to now take into account what is being show in in the movie theatres
+	Chance of female getting pregnant now improved if romance movies are being shown
+
+3.0.0.6
+	Fixed time displays to show time in years, days, hours & minutes
+	Changed the "x" to "Close" in the GUI
+	Added following parts:
+		biosphereAirlock
+		LaserSmelter
+		CNC Mill
+		CivPopSAS
+		CivPoPSaucer
+		Flight School
+		Movie Theater
+
+3.0.0.5
+	Renamed module to ModuleAnimateGenericEffects
+	Split ModuleAnimateGenericEffects into new mod
+	Added MM code to parts to use stock ModuleAnimateGeneric if the ModuleAnimateGenericEffects is not installed
+	Mod now has dependency on ModuleAnimateGenericEffects for proper animation & sounds for the landing legs
+
+3.0.0.4
+	Created new module to add sounds to animation: 
+		ModuleAnimateGenericSound
+			Can use seperate deploy and retraction sound, using Stock EFFECTS stanzas
+			Added code for parts in symmetry
+			Added option to set animation speed
+	Added animation sounds when landing legs lower and raise to both landing legs
+	Slowed animation down to 1/10 speed
+	
+
+3.0.0.3
+	Removed bad character in CTT patch for the nduniverisity part in the TechRequired
+
+3.0.0.2
+	Added missing animation modules for the landing legs.  Legs don't have suspension at this time
+	Added missing reactorassets.png file (made new one, couldn't find in old versions of mod)
+
+3.0.0.1
+	Minor tweaks to the CTT configs
+		Added smallCivPopReactor
+		Added colossalLandingLeg
+		Added colossalLandingLeg2
+	Added basic tags to all parts
+	Edited descriptions to remove i18n chars
+
+3.0.0
+	Adoption by Linuxgurugamer
+	Added bulkheadProfiles to all parts
+	Fixed bad chars in some parts preventing them from loading
+	Reorganized directories
+	Created overall solution file
+	Added Assemblyversion.tt to all dlls
+	Added InstallChecker to all dlls
+	Adjusted node positions on many parts
+	Replaced stock toolbar code with ToolbarController
+	Added support for the ClickThroughBlocker
+	Added unique numbers for the window ids
